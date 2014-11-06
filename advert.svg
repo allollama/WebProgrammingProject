@@ -1,0 +1,88 @@
+<svg width="5000" height="5000" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path id="phoneBottom" d="M 0 415 C 1 430, 199 430, 200 415" stroke="black" fill="black"/>
+    <rect id="phone" width="200" height="420" rx="10" ry="10" stroke="black" stroke-width="3px" fill="red"></rect>
+    <ellipse cx="100" cy="75" rx="95" ry="175" stroke="black" fill="grey"></ellipse>
+    <ellipse cx="100" cy="70" rx="85" ry="165" stroke="black" fill="black"></ellipse>
+    <rect id="screen" width="140" height="110" rx="10" ry="10" x="30" y="50" stroke="black" stroke-width="3px" fill="darkolivegreen"></rect>
+    <ellipse cx="100" cy="70" rx="85" ry="165" stroke="black" fill="none"></ellipse>
+    <path id="upButton" d="M 50 198 C 85 160, 115 160, 150 198" stroke="grey" fill="black"/>
+    <path d="M 30 195 C 65 270, 135 270, 170 195" stroke="black" fill="grey"/>
+    <path id="downButtonTop" d="M 65 202 C 85 192, 115 192, 135 202" stroke="black" fill="black"/>
+    <path id="downButtonBottom" d="M 65 202 C 85 235, 115 235, 135 202" stroke="grey" fill="black"/>
+    <path d="M 30 192 C 30 197, 170 197, 170 192" stroke="black" fill="none"/>
+    <path id="downButtonTopShading" d="M 75 195 C 85 187, 115 187, 125 195" stroke="grey" fill="none"/>
+    <text x="62" y="90" stroke="black" font-family="Sans-Serif"><tspan>FI</tspan><tspan stroke="red" fill="red">L</tspan></text>
+    <rect width="10" height="10" stroke="gold" fill="gold" x="95" y="80"></rect>
+    <rect width="10" height="10" stroke="orange" fill="orange" x="110" y="80"></rect>
+    <rect width="10" height="10" stroke="red" fill="red" x="125" y="80"></rect>
+    <line x1="30" x2="90" y1="161" y2="170" stroke="grey" fill="none"></line>
+    <line x1="170" x2="110" y1="161" y2="170" stroke="grey" fill="none"></line>
+    <g stroke="black" fill="grey" font-family="Sans-Serif">
+        <ellipse cx="40" cy="275" rx="20" ry="10"/>
+        <text x="25" y="280" stroke="black" fill="black" font-size="8pt">1 <tspan font-size="6pt"></tspan></text>
+        <ellipse cx="100" cy="275" rx="20" ry="10"/>
+        <text x="85" y="280" stroke="black" fill="black" font-size="8pt">2 <tspan font-size="6pt">abc</tspan></text>
+        <ellipse cx="160" cy="275" rx="20" ry="10"/>
+        <text x="145" y="280" stroke="black" fill="black" font-size="8pt">3 <tspan font-size="6pt">def</tspan></text>
+        <ellipse cx="40" cy="310" rx="20" ry="10"/>
+        <text x="25" y="315" stroke="black" fill="black" font-size="8pt">4 <tspan font-size="6pt">ghi</tspan></text>
+        <ellipse cx="100" cy="310" rx="20" ry="10"/>
+        <text x="85" y="315" stroke="black" fill="black" font-size="8pt">5 <tspan font-size="6pt">jkl</tspan></text>
+        <ellipse cx="160" cy="310" rx="20" ry="10"/>
+        <text x="145" y="315" stroke="black" fill="black" font-size="8pt">6 <tspan font-size="6pt">mno</tspan></text>
+        <ellipse cx="40" cy="345" rx="20" ry="10"/>
+        <text x="25" y="350" stroke="black" fill="black" font-size="8pt">7 <tspan font-size="6pt">pqrs</tspan></text>
+        <ellipse cx="100" cy="345" rx="20" ry="10"/>
+        <text x="85" y="350" stroke="black" fill="black" font-size="8pt">8 <tspan font-size="6pt">tuv</tspan></text>
+        <ellipse cx="160" cy="345" rx="20" ry="10"/>
+        <text x="145" y="350" stroke="black" fill="black" font-size="8pt">9 <tspan font-size="6pt">wxyz</tspan></text>
+        <ellipse cx="40" cy="380" rx="20" ry="10"/>
+        <text x="25" y="385" stroke="black" fill="black" font-size="8pt">* <tspan font-size="6pt"></tspan></text>
+        <ellipse cx="100" cy="380" rx="20" ry="10"/>
+        <text x="85" y="385" stroke="black" fill="black" font-size="8pt">0 <tspan font-size="6pt"></tspan></text>
+        <ellipse cx="160" cy="380" rx="20" ry="10"/>
+        <text x="145" y="385" stroke="black" fill="black" font-size="8pt"># <tspan font-size="6pt"></tspan></text>
+    </g>
+    <text stroke="black" fill="black" font-family="Sans-Serif" font-size="24pt" x="250" y="100">
+        <tspan font-size="30pt">FRUGAL INNOVATION </tspan><tspan font-size="30pt" stroke="red" fill="red">LAB</tspan>
+        <tspan x="295" y="200">BRINGING COMPUTING TO</tspan> 
+        <tspan x="255" y="250">UNDER-SERVED COMMUNITIES</tspan>
+    </text>
+    <svg x="10" y="112" id="call">
+        <g>
+            <ellipse cx="50" cy="100" rx="3.3" ry="3.3" fill="green" stroke="green" />
+            <ellipse cx="40" cy="92" rx="3.3" ry="3.3" fill="green" stroke="green" />
+            <line x1="37" x2="47" y1="92" y2="100" stroke="green" stroke-width="3.5" />
+        </g>
+    </svg>
+    <svg x="-10" y="125" id="end">
+        <g>
+            <ellipse cx="150" cy="88" rx="3.3" ry="3.3" fill="red" stroke="red" />
+            <ellipse cx="160" cy="80" rx="3.3" ry="3.3" fill="red" stroke="red" />
+            <line x1="153" x2="163" y1="88" y2="80" stroke="red" stroke-width="3.5" />
+        </g>
+    </svg>
+    <svg x="-9" y="160" id="downbutton">
+        <g>
+            <line x1="103" x2="110" y1="45" y2="55" stroke="white" stroke-width="2" />
+            <line x1="110" x2="117" y1="56" y2="45" stroke="white" stroke-width="2" />
+        </g>
+    </svg>
+    <svg x="-9" y="120" id="upbutton">
+        <g transform="rotate(180 110 55)">
+            <line x1="103" x2="110" y1="45" y2="55" stroke="white" stroke-width="2" />
+            <line x1="110" x2="117" y1="56" y2="45" stroke="white" stroke-width="2" />
+        </g>
+    </svg>
+    <svg x="-50" y="127" id="leftbutton">
+        <g transform="rotate(25 90 45)">
+            <line x1="90" x2="110" y1="45" y2="45" stroke="white" stroke-width="2" />
+        </g>
+    </svg>
+    <svg x="31" y="134" id="rightbutton">
+        <g transform="rotate(155 110 45)">
+            <line x1="90" x2="110" y1="45" y2="45" stroke="white" stroke-width="2" />
+        </g>
+    </svg>
+    
+</svg>
