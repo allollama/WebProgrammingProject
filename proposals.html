@@ -5,20 +5,32 @@ The submitted ideas should be stored in a database.
 
 <html lang="en">
 
-<head>
-
-	<meta charset="utf-8"/>
-
-	<title> Proposals </title>
-
+    <head>
+        <meta charset="utf-8"/>
+        <title> Proposals </title>
+        <link rel="stylesheet" type="text/css" href="myStyles.css">
+    </head>
+    
 	<body>
-
-	<form action="proposalDB.php" method="post">
-	Project Name: <input type="text" name="project" />
-	Submitter: <input type="text" name="name" /><br/> 
-	Brief Summary: <input type="text" name="summary" style="width:30%"/>
-	<input type="submit" />
-	</form>
-
+        <header>
+            <span id="title">FrugalInnovation<span id="labSpan">Lab</span></span></br>
+            Proposals
+        </header>
+        <main>
+            <form action="proposals.php" method="post">
+                <fieldset>
+                    Project Name: <input type="text" name="project" />
+                    Submitter: <input type="text" name="name" /><br/> 
+                    Brief Summary: <input type="text" name="summary" style="width:30%"/>
+                    <input type="submit" />
+                </fieldset>
+            </form>
+        </main>
+    
+        <footer>
+            <address>Created by <a href="mailto:asehatti@scu.edu">Ashley Sehatti</a>
+                 and <a href="mailto:swhitcomb@scu.edu">Stan Whitcomb</a></address>
+        </footer>
 	</body>
-	</html>
+    
+</html>

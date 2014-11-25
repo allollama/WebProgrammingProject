@@ -7,22 +7,35 @@ You must allow the users to view the blog.-->
 
 <html lang="en">
 
-<head>
+    <head>
 
-	<meta charset="utf-8"/>
-
-	<title> Forum/Blog </title>
-
+        <meta charset="utf-8"/>
+        <title> Forum </title>
+        <link rel="stylesheet" type="text/css" href="myStyles.css">
+        
+    </head>
 	<body>
 
-	<form action="forumDB.php" method="post">
-	Project Name: <input type="text" name="project" />
-	Submitter: <input type="text" name="name" /><br/>
-	Update: <input type="text" name="update" style="width:15%"/>
-	<input type="submit" />
-	</form>
+        <header>
+            <span id="title">FrugalInnovation<span id="labSpan">Lab</span></span></br>
+            Forum
+        </header>
+        
+        <main>
+            Post an update or inquiry on a project:
+            <form action="forumDB.php" method="post">
+            <fieldset>
+            Project Name: <input type="text" name="project" /><br/>
+            Submitter: <input type="text" name="name" /><br/>
+            Update: </br><textarea name="update" rows="10" cols="50"></textarea>
+            <input type="submit" />
+            </fieldset>
+            </form>
+        </main>
 
-
-
+        <footer>
+            <address>Created by <a href="mailto:asehatti@scu.edu">Ashley Sehatti</a>
+                 and <a href="mailto:swhitcomb@scu.edu">Stan Whitcomb</a></address>
+        </footer>
 	</body>
-	</html>
+</html>

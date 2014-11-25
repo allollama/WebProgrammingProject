@@ -1,0 +1,116 @@
+* {
+    font-family: Gill Sans, sans-serif;
+}
+body {
+    background-image: url('crossword.png');
+    background-position-x: center; 
+}
+header {
+    width:100%;
+    height:90px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+header object {
+    position:absolute;
+    left:0em;
+    top:0em;
+}
+#header {
+    padding:0.5em;
+    margin:auto;
+    text-align: center;
+}
+#title {
+    font-size: 2em;
+}
+#labSpan {
+    color:#D80000;
+}
+footer {
+    width:100%;
+    /*margin-top:90px;
+    margin-bottom: 0;*/
+    position:absolute;
+    bottom:0;
+    left:0;
+    font-size: 0.75em;
+    padding:1em;
+}
+#quizWrapper {
+    width:40em;
+    height:25em;
+    position: relative;
+    margin: 100px auto auto auto;
+    padding:1em;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+#progressBar {
+    float:left;
+    /*border:0.1em solid black;*/
+    background-color: lightgrey;
+    border-radius: 1em;
+    width: 50%;
+    height: 1.5em;
+    position:relative;
+    top:0.75em;
+    left:0.75em;
+}
+#progress {
+    margin:0;
+    padding:0;
+    width: 0%;
+    height: 1.5em;
+    background-color: #D80000;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+#score {
+    float:right;
+    width: 4em;
+    font-size: 1.5em;
+    position:relative;
+    top:0.5em;
+    right:0.5em;
+}
+#questionWrapper {
+    width:50%;
+    height:15em;
+    border: 0.1em solid black;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    padding:0.5em;
+}
+#question {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+.button {
+    border: 0.2em solid #D80000;
+    position:absolute;
+    bottom:2em;
+    padding:0.25em 0.5em;
+    border-radius: 1em;
+    background-color: #D80000;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #FF0000;
+    border-color: #FF0000;
+}
+.button:active {
+    border-style: inset;
+}
+#nextButton {
+    left:30%;
+}
+#quitButton {
+    right:30%;
+}
