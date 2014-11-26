@@ -20,7 +20,8 @@ echo "<table border='1' width='100%'>";
 while($row = mysql_fetch_array($result))
 {
 	echo "<tr><td style='padding:1em'>";
-	echo "Project: " . $row['Project'] . " Posted by: " . $row['Name'];
+	echo "Project: " . $row['Project'] . "<br/>";
+	echo " Posted by: " . $row['Name'];
 	echo "<br/>" . $row['Updated'] . "";
 	echo "</td></tr>";
 }
