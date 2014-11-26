@@ -31,6 +31,22 @@ You must allow the users to view the blog.-->
             <input type="submit" />
             </fieldset>
             </form>
+			
+			<div id="getInfo">
+				<form action="showForum.php" method="post">
+				<input type="submit" name="submit" value="View All Posts"/>
+				</form>
+
+				<h4>Do you want to see a blog post? </h4><br/>
+				<form action="showSearchForum.php" method="post">
+				<fieldset>
+				Search by Author or Project Name: <input type="text" name="search" /> <br/>
+				<input type="submit" value="View Post" />
+				</fieldset>
+				</form>
+			</div>
+
+
         </main>
 
         <footer>
