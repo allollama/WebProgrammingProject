@@ -1,12 +1,14 @@
 
 <?php
-$con = mysql_connect("dbserver.engr.scu.edu","swhitcom","00000874802");
+//$con = mysql_connect("dbserver.engr.scu.edu","swhitcom","00000874802");
+$con = mysql_connect("localhost","root","root");
  
 if (!$con)
 {
 	die('Could not connect: ' . mysql_error());
 }
-mysql_select_db("sdb_swhitcom", $con);
+//mysql_select_db("sdb_swhitcom", $con);
+mysql_select_db("webProgrammingLab", $con);
 
 $sql = "SELECT Name FROM Donations";
 if(!($result = mysql_query($sql, $con)))
@@ -62,8 +64,20 @@ else {
 
 echo "<html lang='en'><head><meta charset='utf-8'/><title> Donate </title>
         <link rel='stylesheet' type='text/css' href='myStyles.css'></head>
-	   <body><header><span id='title'>FrugalInnovation<span id='labSpan'>Lab</span></span></br>
-        Donations</header><main>";
+	   <body><header><object type='image/svg+xml' data='logo2.svg'>
+       Your browser does not support SVG</object><div id='header'>
+        <span id='title'>FrugalInnovation<span id='labSpan'>Lab</span></span>
+        </br>Donations</div></header><nav>
+            <ul>
+                <li><a href='.'>Home</a></li>
+                <li><a href='.'>Projects</a></li>
+                <li><a href='.'>The Team</a></li>
+                <li><a href='donations.html'>Donate</a></li>
+                <li><a href='Quiz.html'>Take a Quiz</a></li>
+                <li><a href='blogpage.html'>Forum/Blog</a></li>
+                <li><a href='proposals.html'>Propose a Project</a></li>
+            </ul>
+        </nav><main>";
 echo "Thank you for donating " . $_POST['name'];
 echo "</main><footer><address>Created by <a href='mailto:asehatti@scu.edu'>Ashley Sehatti</a>
         and <a href='mailto:swhitcomb@scu.edu'>Stan Whitcomb</a></address></footer></body></html>";

@@ -1,26 +1,21 @@
-<!--This page should allow visitors (as well as FIL team members/staff) 
-to submit/post project updates or inquiries via a form.  
-The submitted information should be stored in a database.  
-You must allow the users to view the blog.-->
-
+<!--Allows potential partners to submit their ideas for projects via a form. 
+The submitted ideas should be stored in a database.
+-->
 <!DOCTYPE html>
 
 <html lang="en">
 
     <head>
-
         <meta charset="utf-8"/>
-        <title> Forum </title>
+        <title> Frugal Innovation Lab </title>
         <link rel="stylesheet" type="text/css" href="myStyles.css">
-        
     </head>
+    
 	<body>
-
         <header>
             <object type="image/svg+xml" data="logo2.svg">Your browser does not support SVG</object>
             <div id="header">
                 <span id="title">FrugalInnovation<span id="labSpan">Lab</span></span></br>
-                Forum
             </div>
         </header>
         <nav>
@@ -35,36 +30,13 @@ You must allow the users to view the blog.-->
             </ul>
         </nav>
         <main>
-            Post an update or inquiry on a project:
-            <form action="forumDB.php" method="post">
-            <fieldset>
-            Project Name: <input type="text" name="project" /><br/>
-            Submitter: <input type="text" name="name" /><br/>
-            Update: </br><textarea name="update" rows="10" cols="50"></textarea>
-            <input type="submit" />
-            </fieldset>
-            </form>
-			
-			<div id="getInfo">
-				<form action="showForum.php" method="post">
-				<input type="submit" name="submit" value="View All Posts"/>
-				</form>
-
-				<h4>Do you want to see a blog post? </h4><br/>
-				<form action="showSearchForum.php" method="post">
-				<fieldset>
-				Search by Author or Project Name: <input type="text" name="search" /> <br/>
-				<input type="submit" value="View Post" />
-				</fieldset>
-				</form>
-			</div>
-
 
         </main>
-
+    
         <footer>
             <address>Created by <a href="mailto:asehatti@scu.edu">Ashley Sehatti</a>
                  and <a href="mailto:swhitcomb@scu.edu">Stan Whitcomb</a></address>
         </footer>
 	</body>
+    
 </html>
