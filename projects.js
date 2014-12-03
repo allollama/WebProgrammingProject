@@ -1,3 +1,5 @@
+//continue from http://www.scu.edu/engineering/frugal/gallery/2012/
+
 var pastProjects = [
     {   name: "Energy Made in Uganda",
         category: "Renewable Energy",
@@ -62,4 +64,5 @@ var pastProjects = [
         student4: "Jessica VanderGiessen",
         advisor: "Shoba Krishnan, Associate Professor of Electrical Engineering\nSilvia Figueira, Associate Professor of Computer Engineering\nUnyoung (Ashley) Kim, Assistant Professor of Bioengineering",
         description: ""
-    },
+    }
+];
