@@ -82,6 +82,10 @@ form {
     test-align: justify;
 }
 
+#map {
+    float: right;
+}
+
 footer {
     width:100%;
     position:absolute;

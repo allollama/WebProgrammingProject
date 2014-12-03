@@ -9,6 +9,26 @@ The submitted ideas should be stored in a database.
         <meta charset="utf-8"/>
         <title> Frugal Innovation Lab </title>
         <link rel="stylesheet" type="text/css" href="myStyles.css">
+        <script>
+        //doesn't block the load event
+        function createIframe(){
+          var i = document.createElement("iframe");
+          i.src = "http://www.scu.edu/map/214/index.cfm";
+          i.scrolling = "auto";
+          i.frameborder = "1";
+          i.width = "500px";
+          i.height = "350px";
+          document.getElementById("map").appendChild(i);
+        };
+
+        // Check for browser support of event handling capability
+        if (window.addEventListener)
+        window.addEventListener("load", createIframe, false);
+        else if (window.attachEvent)
+        window.attachEvent("onload", createIframe);
+        else window.onload = createIframe;
+
+        </script>
     </head>
     
 	<body>
@@ -30,7 +50,12 @@ The submitted ideas should be stored in a database.
             </ul>
         </nav>
         <main>
-            <iframe src="http://www.scu.edu/map/214/index.cfm" width="600" height="400" style="border: .1em solid black"></iframe>
+            <div style="float:left">
+                <p> Description of the site</p>
+                <p> Description of Frugal Innovation Lab (mission and brief metholodgy)</p>
+            </div>
+            <div id="map"></div>
+            <div> Relevant external links</div>
         </main>
     
         <footer>
