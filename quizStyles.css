@@ -2,13 +2,12 @@
     width:40em;
     height:25em;
     position: relative;
-    margin: 10em auto auto auto;
+    margin: 2em auto auto auto;
     padding:1em;
     background-color: rgba(0, 0, 0, 0.05);
 }
 #progressBar {
     float:left;
-    /*border:0.1em solid black;*/
     background-color: lightgrey;
     border-radius: 1em;
     width: 50%;

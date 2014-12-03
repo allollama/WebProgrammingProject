@@ -18,7 +18,9 @@ if (!mysql_query($sql,$con))
 	die('Error: ' . mysql_error());
 }
 echo "<html lang='en'><head><meta charset='utf-8'/><title> Proposals </title>
-        <link rel='stylesheet' type='text/css' href='myStyles.css'></head>
+        <link rel='stylesheet' type='text/css' href='myStyles.css'>
+        <script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+        <script  src='dynamicallyAdjustFooter.js' type='text/javascript'></script></head>
 	   <body><header><object type='image/svg+xml' data='logo2.svg'>
        Your browser does not support SVG</object><div id='header'>
         <span id='title'>FrugalInnovation<span id='labSpan'>Lab</span></span>

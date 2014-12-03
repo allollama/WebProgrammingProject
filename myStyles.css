@@ -9,9 +9,6 @@ body {
 header {
     width:100%;
     height:5em;
-    position:absolute;
-    top:0;
-    left:0;
     padding:0.5em;
     margin:auto;
     text-align: center;
@@ -37,11 +34,9 @@ header object {
 }
 
 nav {
-    position: absolute;
-    top:6em;
-    left: 0;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
+    overflow: hidden;
     border-top: 0.1em solid black;
     border-bottom: 0.1em solid black;
 }
@@ -69,9 +64,7 @@ nav ul li a:hover {
 main {
     padding:1em;
     width:75%;
-    position: relative;
-    top:10em;
-    margin:auto;
+    margin:2em auto;
 }
 
 form {
@@ -86,6 +79,11 @@ form {
     float: right;
 }
 
+#listOfProjects {
+    border: 0.1em solid black;
+    width: 100%;
+}
+
 footer {
     width:100%;
     position:absolute;
@@ -93,4 +91,9 @@ footer {
     left:0;
     font-size: 0.75em;
     padding:1em;
+}
+
+#moveFooterDown {
+    position: relative;
+    top: 5em;
 }

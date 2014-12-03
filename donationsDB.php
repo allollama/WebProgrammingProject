@@ -31,7 +31,7 @@ $name = $_POST['name'];
 
 if($new) {
 	//adds the info if there has not been an addition in this name
-	$sql="INSERT INTO Donations (Name, Donation, Time)
+	$sql="INSERT INTO Donations (Name, Donation, Date)
 	VALUES
 	('$name','$donation','$date')";
 	if (!mysql_query($sql,$con))
@@ -52,7 +52,7 @@ else {
 	$totaldonation = $row['Donation'];
 	$donation = $donation + $totaldonation;
 	
-	$sql = "UPDATE Donations SET Donation='$donation', Time='$date' WHERE Name='$name'";
+	$sql = "UPDATE Donations SET Donation='$donation', Date='$date' WHERE Name='$name'";
 	if(!mysql_query($sql, $con))
 	{
 		die('Error: ' . mysql_error());
@@ -63,7 +63,9 @@ else {
 
 
 echo "<html lang='en'><head><meta charset='utf-8'/><title> Donate </title>
-        <link rel='stylesheet' type='text/css' href='myStyles.css'></head>
+        <link rel='stylesheet' type='text/css' href='myStyles.css'>
+        <script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+        <script  src='dynamicallyAdjustFooter.js' type='text/javascript'></script></head>
 	   <body><header><object type='image/svg+xml' data='logo2.svg'>
        Your browser does not support SVG</object><div id='header'>
         <span id='title'>FrugalInnovation<span id='labSpan'>Lab</span></span>
