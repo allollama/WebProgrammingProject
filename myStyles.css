@@ -65,6 +65,7 @@ main {
     padding:1em;
     width:75%;
     margin:2em auto;
+    overflow: hidden;
 }
 
 form {
@@ -79,9 +80,26 @@ form {
     float: right;
 }
 
-#listOfProjects {
+table {
     border: 0.1em solid black;
     width: 100%;
+}
+
+table * {
+    padding: 1em;
+    border: 0.1em solid black;
+}
+
+#listOfProjects {
+    width: 45%;
+    float: left;
+    margin: 1em;
+}
+
+canvas {
+    width: 45%;
+    float: left;
+    margin: 1em;
 }
 
 footer {

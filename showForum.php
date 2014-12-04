@@ -30,11 +30,11 @@ echo "<html lang='en'><head><meta charset='utf-8'/><title> Donate </title>
             </ul>
         </nav><main>";
 
-echo "<table border='1' width='100%'>";
+echo "<table>";
 
 while($row = mysql_fetch_array($result))
 {
-	echo "<tr><td style='padding:1em'>";
+	echo "<tr><td>";
 	echo "Project: " . $row['Project'] . "<br/>";
 	echo " Posted by: " . $row['Name'];
 	echo "<br/>" . $row['Updated'] . "";
