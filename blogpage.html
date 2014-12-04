@@ -14,6 +14,27 @@ You must allow the users to view the blog.-->
         <link rel="stylesheet" type="text/css" href="myStyles.css">
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script  src="dynamicallyAdjustFooter.js" type="text/javascript"></script>
+        <script>
+            function validateForm() {
+                var name = $("#name").val();
+                var project = $("#project").val();
+                var update = $("#update").val();
+                if (project == null || project == "") {
+                    alert ("Please specify a project name.");
+                    return false;
+                }
+                if (name == null || name == "") {
+                    alert ("You forgot your name.");
+                    return false;
+                }
+                if (update == null || update == "") {
+                    alert ("Did you have an update or inquiry?");
+                    return false;
+                }
+                
+                return true;
+            }
+        </script>
     </head>
 	<body>
 
@@ -36,12 +57,12 @@ You must allow the users to view the blog.-->
             </ul>
         </nav>
         <main>
-            Post an update or inquiry on a project:
-            <form action="forumDB.php" method="post">
+            <h4>Post an update or inquiry on a project:</h4>
+            <form action="forumDB.php" onsubmit="return validateForm()" method="post">
             <fieldset>
-            Project Name: <input type="text" name="project" /><br/>
-            Submitter: <input type="text" name="name" /><br/>
-            Update: </br><textarea name="update" rows="10" cols="50"></textarea>
+            Project Name: <input type="text" name="project" id="project"/><br/>
+            Submitter: <input type="text" name="name" id="name"/><br/>
+            Update: </br><textarea name="update" id="update" rows="10" cols="50"></textarea>
             <input type="submit" />
             </fieldset>
             </form>

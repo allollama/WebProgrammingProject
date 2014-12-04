@@ -11,6 +11,27 @@ The submitted ideas should be stored in a database.
         <link rel="stylesheet" type="text/css" href="myStyles.css">
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script  src="dynamicallyAdjustFooter.js" type="text/javascript"></script>
+        <script>
+            function validateForm() {
+                var name = $("#name").val();
+                var project = $("#project").val();
+                var summary = $("#summary").val();
+                if (project == null || project == "") {
+                    alert ("Please give a project name.");
+                    return false;
+                }
+                if (name == null || name == "") {
+                    alert ("You forgot your name.");
+                    return false;
+                }
+                if (summary == null || summary == "") {
+                    alert ("Please put a summary of your idea.");
+                    return false;
+                }
+                
+                return true;
+            }
+        </script>
     </head>
     
 	<body>
@@ -33,11 +54,11 @@ The submitted ideas should be stored in a database.
             </ul>
         </nav>
         <main>
-            <form action="proposals.php" method="post">
+            <form action="proposals.php" onsubmit="return validateForm()" method="post">
                 <fieldset>
-                    Project Name: <input type="text" name="project" />
-                    Submitter: <input type="text" name="name" /><br/> 
-                    Brief Summary: <input type="text" name="summary" style="width:30%"/>
+                    Project Name: <input type="text" name="project" id="project"/>
+                    Submitter: <input type="text" name="name" id="name"/><br/> 
+                    Brief Summary: <input type="text" name="summary" id="summary" style="width:30%"/>
                     <input type="submit" />
                 </fieldset>
             </form>
