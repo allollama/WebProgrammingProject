@@ -60,15 +60,6 @@ else {
 	}
 }
 
-
-$13.30 (Level 1): Supports the wages and benefits of an undergraduate student to work for one hour on a FIL project!
-$17.65 (Level 2): Supports the wages and benefits of a graduate student to work for one hour on a FIL project!
-$39.95 (Level 3): Purchases one Raspberry Pi (or similar products) for the development of mobile applications, smart sensors, or other solutions for our field-based social enterprises.
-$78.60 (Level 4): Covers the average cost of admittance to a FIL related conference for a faculty/staff member.
-$500 (Level 5): Provides a Senior Design team with enough money to buy materials for their prototype.
-$898 (Level 6): Accommodates one student’s air fare to South America to field test their prototypes with FIL university and enterprise partners.
-$1,500 (Level 7): Makes you exceptionally awesome.
-
 if ($amount < 13.30)
     $message = "";
 else if ($amount < 17.65)
@@ -93,6 +84,7 @@ echo "<html lang='en'><head><meta charset='utf-8'/><title> Donate </title>
 	   <body><header><object type='image/svg+xml' data='logo2.svg'>
        Your browser does not support SVG</object><div id='header'>
         <span id='title'>FrugalInnovation<span id='labSpan'>Lab</span></span>
+        <canvas id='canvasLogo' width='50' height='15'></canvas>
         </br>Donations</div></header><nav>
             <ul>
                 <li><a href='.'>Home</a></li>

@@ -33,6 +33,11 @@ header object {
     color:#D80000;
 }
 
+#canvasLogo {
+    width: 5em;
+    height: 1.5em;
+}
+
 nav {
     width: 100%;
     margin: 0 auto;
@@ -72,12 +77,30 @@ form {
     padding:1em;
 }
 
+h3 {
+    color: gold;
+}
+
 #levels {
     test-align: justify;
 }
 
+#coreCompImg {
+    float: left;
+    border: 0.1em solid black;
+    height: 300px;
+    margin: 1em;
+}
+
 #map {
     float: right;
+    border: 0.1em solid black;
+    height: 300px;
+    margin: 1em;
+}
+
+#otherResources {
+    clear: both;
 }
 
 table {
@@ -95,7 +118,7 @@ table * {
     float: left;
 }
 
-canvas {
+#graphOfProjectCategories {
     width: 45%;
     float: left;
     margin-left: 2em;

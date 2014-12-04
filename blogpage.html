@@ -41,7 +41,9 @@ You must allow the users to view the blog.-->
         <header>
             <object type="image/svg+xml" data="logo2.svg">Your browser does not support SVG</object>
             <div id="header">
-                <span id="title">FrugalInnovation<span id="labSpan">Lab</span></span></br>
+                <span id="title">FrugalInnovation<span id="labSpan">Lab</span></span>
+                <canvas id="canvasLogo" width="50" height="15"></canvas>
+                </br>
                 Forum
             </div>
         </header>
@@ -57,7 +59,7 @@ You must allow the users to view the blog.-->
             </ul>
         </nav>
         <main>
-            <h4>Post an update or inquiry on a project:</h4>
+            <h3>Post an update or inquiry on a project:</h3>
             <form action="forumDB.php" onsubmit="return validateForm()" method="post">
             <fieldset>
             Project Name: <input type="text" name="project" id="project"/><br/>
@@ -72,7 +74,7 @@ You must allow the users to view the blog.-->
 				<input type="submit" name="submit" value="View All Posts"/>
 				</form>
 
-				<h4>Do you want to see a blog post? </h4><br/>
+				<h3>Do you want to see a blog post?</h3><br/>
 				<form action="showSearchForum.php" method="post">
 				<fieldset>
 				Search by Author or Project Name: <input type="text" name="search" /> <br/>

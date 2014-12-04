@@ -24,6 +24,7 @@ echo "<html lang='en'><head><meta charset='utf-8'/><title> Proposals </title>
 	   <body><header><object type='image/svg+xml' data='logo2.svg'>
        Your browser does not support SVG</object><div id='header'>
         <span id='title'>FrugalInnovation<span id='labSpan'>Lab</span></span>
+        <canvas id='canvasLogo' width='50' height='15'></canvas>
         </br>Proposals</div></header><nav>
             <ul>
                 <li><a href='.'>Home</a></li>

@@ -20,7 +20,6 @@ function showProject(project) {
 }
 
 function showGraph() {
-    debugger;
     var c = document.getElementById("graphOfProjectCategories");
     var ctx = c.getContext("2d");
     ctx.font = "20px Gill Sans";
