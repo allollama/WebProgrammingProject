@@ -7,15 +7,15 @@ $name = $_POST['name'];
 $amount = $donation;
 $message;
 
-//$con = mysql_connect("dbserver.engr.scu.edu","swhitcom","00000874802");
-$con = mysql_connect("localhost","root","root");
+$con = mysql_connect("dbserver.engr.scu.edu","swhitcom","00000874802");
+//$con = mysql_connect("localhost","root","root");
  
 if (!$con)
 {
 	die('Could not connect: ' . mysql_error());
 }
-//mysql_select_db("sdb_swhitcom", $con);
-mysql_select_db("webProgrammingLab", $con);
+mysql_select_db("sdb_swhitcom", $con);
+//mysql_select_db("webProgrammingLab", $con);
 
 $sql = "SELECT Name FROM Donations";
 if(!($result = mysql_query($sql, $con)))
@@ -31,7 +31,7 @@ while($row = mysql_fetch_array($result)){
 
 if($new) {
 	//adds the info if there has not been an addition in this name
-	$sql="INSERT INTO Donations (Name, Donation, Date)
+	$sql="INSERT INTO Donations (Name, Donation, Time)
 	VALUES
 	('$name','$donation','$date')";
 	if (!mysql_query($sql,$con))
@@ -53,7 +53,7 @@ else {
 	$donation = $donation + $totaldonation;
     $amount = $donation;
 	
-	$sql = "UPDATE Donations SET Donation='$donation', Date='$date' WHERE Name='$name'";
+	$sql = "UPDATE Donations SET Donation='$donation', Time='$date' WHERE Name='$name'";
 	if(!mysql_query($sql, $con))
 	{
 		die('Error: ' . mysql_error());
@@ -63,19 +63,19 @@ else {
 if ($amount < 13.30)
     $message = "";
 else if ($amount < 17.65)
-    $message = "You've funded an undergraduate student to work on a FIL project for one hour!";
+    $message = " You've funded an undergraduate student to work on a FIL project for one hour!";
 else if ($amount < 39.95)
-    $message = "You've funded a graduate student to work on a FIL project for one hour!";
+    $message = " You've funded a graduate student to work on a FIL project for one hour!";
 else if ($amount < 78.60)
-    $message = "You've funded a Raspberry Pi (or similar products) for the development of mobile applications, smart sensors, or other solutions for our field-based social enterprises!";
+    $message = " You've funded a Raspberry Pi (or similar products) for the development of mobile applications, smart sensors, or other solutions for our field-based social enterprises!";
 else if ($amount < 500)
-    $message = "You've funded a faculty or staff member's admittance to a FIL related conference!";
+    $message = " You've funded a faculty or staff member's admittance to a FIL related conference!";
 else if ($amount < 898)
-    $message = "You've funded an entire Senior Design team with enough money to buy materials for their prototype!";
+    $message = " You've funded an entire Senior Design team with enough money to buy materials for their prototype!";
 else if ($amount < 1500)
-    $message = "You've funded one student’s air fare to South America to field test their prototypes with FIL university and enterprise partners!";
+    $message = " You've funded one student’s air fare to South America to field test their prototypes with FIL university and enterprise partners!";
 else
-    $message = "You're exceptionally awesome!";
+    $message = " You're exceptionally awesome!";
 
 echo "<html lang='en'><head><meta charset='utf-8'/><title> Donate </title>
         <link rel='stylesheet' type='text/css' href='myStyles.css'>
@@ -89,7 +89,7 @@ echo "<html lang='en'><head><meta charset='utf-8'/><title> Donate </title>
             <ul>
                 <li><a href='.'>Home</a></li>
                 <li><a href='projects.html'>Projects</a></li>
-                <li><a href='.'>The Team</a></li>
+                <li><a href='faculty.html'>The Team</a></li>
                 <li><a href='donations.html'>Donate</a></li>
                 <li><a href='Quiz.html'>Take a Quiz</a></li>
                 <li><a href='blogpage.html'>Forum/Blog</a></li>

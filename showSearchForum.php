@@ -28,7 +28,7 @@ echo "<html lang='en'><head><meta charset='utf-8'/><title> Donate </title>
             <ul>
                 <li><a href='.'>Home</a></li>
                 <li><a href='projects.html'>Projects</a></li>
-                <li><a href='.'>The Team</a></li>
+                <li><a href='faculty.html'>The Team</a></li>
                 <li><a href='donations.html'>Donate</a></li>
                 <li><a href='Quiz.html'>Take a Quiz</a></li>
                 <li><a href='blogpage.html'>Forum/Blog</a></li>
