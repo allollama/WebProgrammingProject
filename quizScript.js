@@ -18,7 +18,7 @@ function loadQuestion() {
     questionObject = questionArray[index];
     questionArray.splice(index,1);
     $("#question").text(questionObject.question);
-    var ulElement = document.getElementsByTagName("ul")[0];
+    var ulElement = document.getElementById("questionUL");
     ulElement.innerHTML = '';
     for(var i = 0; i<questionObject.options.length; i++) {
         var optionElement = document.createElement("li");
