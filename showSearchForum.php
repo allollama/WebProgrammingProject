@@ -1,13 +1,13 @@
 <?php
-//$con = mysql_connect("dbserver.engr.scu.edu","swhitcom","00000874802");
-$con = mysql_connect("localhost","root","root");
+$con = mysql_connect("dbserver.engr.scu.edu","swhitcom","00000874802");
+//$con = mysql_connect("localhost","root","root");
  
 if (!$con)
 {
 	die('Could not connect: ' . mysql_error());
 }
-//mysql_select_db("sdb_swhitcom", $con);
-mysql_select_db("webProgrammingLab", $con);
+mysql_select_db("sdb_swhitcom", $con);
+//mysql_select_db("webProgrammingLab", $con);
 
 $search = $_POST['search'];
 
